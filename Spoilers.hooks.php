@@ -65,7 +65,8 @@ class Spoilers {
 								<span class='spoilers-hide' style='display:none;'>" . ( $args['hide'] ? htmlentities( $args['hide'], ENT_QUOTES ) : wfMessage('spoilers_hide_default')->text() ) . "</span>
 							</span>
 						</div>
-						<div class='spoilers-body' style='display:none;'>{$renderedInput}</div>
+						<div class='spoilers-body' style='display:none;'></div>
+						<!--{$renderedInput}-->
 					</div>";
 		return $output;
 	}
