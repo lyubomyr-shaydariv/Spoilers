@@ -61,8 +61,8 @@ class Spoilers {
 		$output =	"<div class='spoilers'>
 						<div class='spoilers-button-container'>
 							<span class='spoilers-button'>
-								<span class='spoilers-show'>" . ( $args['show'] ? htmlentities( $args['show'], ENT_QUOTES) : wfMessage('spoilers_show_default' )->text() ) . "</span>
-								<span class='spoilers-hide' style='display:none;'>" . ( $args['hide'] ? htmlentities( $args['hide'], ENT_QUOTES ) : wfMessage('spoilers_hide_default')->text() ) . "</span>
+								<span class='spoilers-show'>" . ( isset( $args['show'] ) ? htmlentities( $args['show'], ENT_QUOTES) : wfMessage('spoilers_show_default' )->text() ) . "</span>
+								<span class='spoilers-hide' style='display:none;'>" . ( isset( $args['hide'] ) ? htmlentities( $args['hide'], ENT_QUOTES ) : wfMessage('spoilers_hide_default')->text() ) . "</span>
 							</span>
 						</div>
 						<div class='spoilers-body' style='display:none;'></div>
